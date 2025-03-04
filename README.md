@@ -13,17 +13,16 @@ You can read more on this [here](praxis3.pdf).
 ## Build Process
 You can run this project by calling the bash scripts I wrote:
 
-To run the tests provided by the coursework (the testbench is written in python and thus the provided [requirements](requirements.txt) need to be installed):
+### To run the tests provided by the coursework (the testbench is written in python and thus the provided [requirements](requirements.txt) need to be installed):
 ```sh
 ./make_tests.sh
 ```
-
-Building and passing your own file and ports (the amount of ports can vary and be whatever you want,
-as long as it isn't reserved, but it has to be the same on both program calls) as an input (you need two terminals open for this):
+  
+### Building and passing your own file and ports (the amount of ports can vary and be whatever you want, as long as it isn't reserved, but it has to be the same on both program calls) as an input (you need two terminals open for this):
 ```sh
 ./make_build.sh
 ```
-
+  
 Terminal 1:
 ```sh
 ./build/worker 5555 5556 5557 5558
@@ -32,6 +31,6 @@ Terminal 2:
 ```sh
 ./build/distributor test.txt 5555 5556 5557 5558
 ```
-
+  
 
 This is a copy of the original repository (which is on Gitlab).
